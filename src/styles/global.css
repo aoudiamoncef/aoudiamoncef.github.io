@@ -1,0 +1,23 @@
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    background-image: none;
+}
+
+.anchor {
+    background-image: none;
+}
+
+.gatsby-resp-image-link {
+    background-image: none;
+}
+
+.language-javascript>span {
+    font-size: 18px;
+}
+
+:not(pre)>code[class*="language-"] {
+    font-size: 18px;
+}
