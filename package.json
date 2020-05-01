@@ -12,7 +12,9 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\"",
-    "deploy:github": "gatsby build && node ./scripts/deploy-github"
+    "deploy:github": "gatsby build && node ./scripts/deploy-github",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "dependencies": {
     "@babel/core": "^7.7.2",
@@ -45,7 +47,8 @@
     "react-responsive": "^6.1.2",
     "react-typography": "^0.16.19",
     "typography": "^0.16.19",
-    "typography-theme-fairy-gates": "^0.16.19"
+    "typography-theme-fairy-gates": "^0.16.19",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "gh-pages": "^2.1.1",
@@ -63,5 +66,6 @@
   },
   "bugs": {
     "url": "https://github.com/aoudiamoncef/aoudiamoncef.github.io/issues"
-  }
+  },
+  "snyk": true
 }
