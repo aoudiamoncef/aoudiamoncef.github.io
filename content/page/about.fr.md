@@ -1,0 +1,8 @@
+---
+title: "À propos"
+date: 2021-05-19T07:30:00+01:00
+excludeFromTopNav: false
+showDate: false
+---
+
+Je suis développeur de logiciels && un passionné / mainteneur open-source.
