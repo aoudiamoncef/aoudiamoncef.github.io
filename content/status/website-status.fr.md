@@ -7,6 +7,6 @@ noSummary: true
 resizeImages: false
 ---
 
-![Moncef AOUDIA](/images/moncef_aoudia.png)
+![Moncef AOUDIA](/images//favicons/splash.png)
 
 Travail en cours...

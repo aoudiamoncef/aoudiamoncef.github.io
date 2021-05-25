@@ -10,7 +10,7 @@ enableRobotsTXT = true
 DefaultContentLanguage = "en"
 
 # Enable / Disable Google Analytics statistics for your site
-googleAnalytics = "G-N7Y9MWC2ZV"
+googleAnalytics = "G-YF7W1RLLD3"
 
 # Enable / Disable open link with a new tab.
 [blackfriday]
@@ -27,7 +27,7 @@ googleAnalytics = "G-N7Y9MWC2ZV"
   # Description and meta data for the search engines
   author = "Moncef AOUDIA"
   description = "Moncef AOUDIA website"
-  keywords = "blog,personal,responsive,search,font awesome,pages,posts,multilingual"
+  keywords = "blog,personal,graphql,java,springboot,opensource,multilingual"
 
   # How many articles should be displayed at once?
   paginate = 10
@@ -57,7 +57,7 @@ googleAnalytics = "G-N7Y9MWC2ZV"
     gravatarEMail = "mf.aoudia@gmail.com"
 
     # set an path to the image file you want to use | overwrites gravatar
-    customImage = "/images/moncef_aoudia.png"
+    customImage = "/images//favicons/splash.png"
 
     # define the icon you want to use for the overlay for the customImage or gravatar.
     overlayIcon = "fa-home"
@@ -116,8 +116,9 @@ googleAnalytics = "G-N7Y9MWC2ZV"
       { link = "https://twitter.com/aoudiamoncef", icon = "fab fa-twitter" },
       { link = "https://github.com/aoudiamoncef", icon = "fab fa-github" },
       { link = "https://www.linkedin.com/in/%F0%9F%91%A8%E2%80%8D%F0%9F%92%BB-moncef-aoudia-7723b311b/", icon = "fab fa-linkedin" },
-      { link = "mailto:mf.aoudia@gmail.com", icon = "fab fa-google" },
+      { link = "mailto:mf.aoudia@gmail.com", icon = "fas fa-envelope" },
       { link = "https://stackoverflow.com/users/8126192/moncef-aoudia/", icon = "fab fa-stack-overflow" },
+      { link = "https://aoudiamoncef.github.io/index.xml", icon = "fas fa-rss" },
     ]
 
     # credits line configuration
