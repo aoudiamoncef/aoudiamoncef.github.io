@@ -10,7 +10,7 @@ enableRobotsTXT = true
 DefaultContentLanguage = "en"
 
 # Enable / Disable Google Analytics statistics for your site
-googleAnalytics = "G-YF7W1RLLD3"
+googleAnalytics = "UA-197817563-1"
 
 # Enable / Disable open link with a new tab.
 [blackfriday]
