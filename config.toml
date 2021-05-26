@@ -115,9 +115,11 @@ googleAnalytics = "UA-197817563-1"
     socialMediaLinks = [
       { link = "https://twitter.com/aoudiamoncef", icon = "fab fa-twitter" },
       { link = "https://github.com/aoudiamoncef", icon = "fab fa-github" },
-      { link = "https://www.linkedin.com/in/%F0%9F%91%A8%E2%80%8D%F0%9F%92%BB-moncef-aoudia-7723b311b/", icon = "fab fa-linkedin" },
+      { link = "https://www.linkedin.com/in/%F0%9F%91%A8%E2%80%8D%F0%9F%92%BB-moncef-aoudia-7723b311b", icon = "fab fa-linkedin" },
       { link = "mailto:mf.aoudia@gmail.com", icon = "fas fa-envelope" },
-      { link = "https://stackoverflow.com/users/8126192/moncef-aoudia/", icon = "fab fa-stack-overflow" },
+      { link = "https://dev.to/aoudiamoncef", icon = "fab fa-dev" },
+      { link = "https://medium.com/@aoudiamoncef", icon = "fab fa-medium-m" },
+      { link = "https://stackoverflow.com/users/8126192/moncef-aoudia", icon = "fab fa-stack-overflow" },
       { link = "https://aoudiamoncef.github.io/index.xml", icon = "fas fa-rss" },
     ]
 
@@ -129,6 +131,14 @@ googleAnalytics = "UA-197817563-1"
     creditsText = "Moncef AOUDIA website"
     creditsUrl = "https://github.com/aoudiamoncef/aoudiamoncef.github.io"
 
+    # Enable / Disable Utterances comments
+    utterances    = true
+    utterancesJsUrl     = "https://utteranc.es/client.js"
+    utterancesRepository    = "aoudiamoncef/aoudiamoncef.github.io"
+    utterancesIssueTerm   = "pathname"
+    utterancesLabel   = "Comment"
+    utterancesTheme = "github-light"
+    utterancesCrossOrigin = "anonymous"
 
 # customize your available languages for your multi-langual site
 # or delete the [Languages] blog to use the theme with only one supported language
