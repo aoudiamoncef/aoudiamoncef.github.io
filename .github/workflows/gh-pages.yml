@@ -21,12 +21,20 @@ jobs:
           hugo-version: '0.83.1'
           extended: true
 
-      - name: Build
-        run: hugo --minify
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 2.7
+
+      - run: gem install asciidoctor
+
+      - name: Run Hugo
+        run: |
+          alias asciidoctor="asciidoctor --attribute=experimental=true --attribute=icons=font"
+          hugo --minify
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         if: github.ref == 'refs/heads/main'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public

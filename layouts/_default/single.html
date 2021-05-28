@@ -7,10 +7,10 @@
         {{ end }}
     </div>
 
-    <div id="comments-container">
-        {{ template "_internal/disqus.html" . }}
-        {{ partial "commento.html" . }}
-        {{ partial "utterances.html" . }}
-    </div>
+    {{  if eq .Type "article" }}
+        <div id="comments-container">
+            {{ partial "utterances.html" . }}
+        </div>
+    {{ end }}
 
 {{ end }}
