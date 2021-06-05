@@ -1,0 +1,41 @@
+baseURL = "https://aoudiamoncef.github.io"
+languageCode = "en-us"
+title = "Moncef AOUDIA"
+theme = "bilberry"
+copyright = "© 2021 Moncef AOUDIA"
+
+# Generate the robots.txt file for SEO
+enableRobotsTXT = true
+
+googleAnalytics = ""
+
+[outputs]
+  home = [ "HTML", "JSON", "RSS" ]
+  page = [ "HTML"]
+
+[markup]
+  [markup.tableOfContents]
+    endLevel = 5
+    ordered = false
+    startLevel = 2
+  [markup.asciidocExt]
+    backend = "html5"
+    extensions = ["asciidoctor-html5s"]
+    failureLevel = "fatal"
+    noHeaderOrFooter = true
+    preserveTOC = false
+    safeMode = "unsafe"
+    sectionNumbers = true
+    trace = false
+    verbose = false
+    workingFolderCurrent = false
+
+enableGitInfo = true
+
+[frontmatter]
+  date = ["date", "publishDate", "lastmod"]
+  expiryDate = ["expiryDate"]
+  lastmod = [":git", "lastmod", "date", "publishDate"]
+  publishDate = ["lastmod", "publishDate", "date"]
+
+defaultContentLanguage = "en"

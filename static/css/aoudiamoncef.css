@@ -6,10 +6,20 @@
     font-style: normal;
 }
 
+.bilberry-hugo-theme article .content {
+    padding: 1.5em;
+}
+
 .bilberry-hugo-theme a {
-    color: #73ba30;
+    color: #5abf00;
 }
 
 .bilberry-hugo-theme a:hover {
     text-decoration: underline;
+}
+
+
+td, th {
+    padding: 0px 0px;
+    border-bottom: none;
 }

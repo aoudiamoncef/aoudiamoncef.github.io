@@ -5,6 +5,5 @@ excludeFromTopNav: false
 showDate: false
 ---
 :source-highlighter: highlightjs
-:icons: font
 
 I am a software developer && open-source enthusiast/maintainer.

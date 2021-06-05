@@ -1,0 +1,24 @@
+++++
+<h1 align="center">
+    <img src="static/images/favicons/android-chrome-384x384.png" width="100"> </br>
+    Moncef AOUDIA website
+</h1>
+++++
+
+This repo contains the source code of the https://aoudiamoncef.github.io[aoudiamoncef.github.io] website. It is
+built using https://gohugo.io/[Hugo], https://github.com/Lednerb/bilberry-hugo-theme[Billeberry] theme and hosted on https://pages.github.com/[GitHub Pages].
+
+== Editing
+
+Launch a local Hugo server including live reload by running (append `-F`
+for including future posts):
+
+[source,shell]
+----
+hugo server -D
+----
+
+== Deployment
+
+Deployment to GitHub pages happens automatically upon pushing the main
+branch to the upstream repository by means of a GitHub Action.
