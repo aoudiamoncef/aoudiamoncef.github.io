@@ -14,6 +14,10 @@
     color: #5abf00;
 }
 
+.bilberry-hugo-theme article .content a.more {
+    color: #5abf00;
+}
+
 .bilberry-hugo-theme a:hover {
     text-decoration: underline;
 }

@@ -34,7 +34,7 @@ customImage = "/images/favicons/splash.png"
 # define the icon you want to use for the overlay for the customImage or gravatar.
 overlayIcon = "fa-home"
 # always display the top navigation (with pages and search) on non-mobile screens
-permanentTopNav = false
+permanentTopNav = true
 # always display the top navigation when scrolling
 # works only with permanentTopNav = true
 stickyNav = false
@@ -77,6 +77,7 @@ socialMediaLinks = [
   { link = "mailto:mf.aoudia@gmail.com", icon = "fas fa-envelope" },
   { link = "https://dev.to/aoudiamoncef", icon = "fab fa-dev" },
   { link = "https://medium.com/@aoudiamoncef", icon = "fab fa-medium-m" },
+  { link = "https://aoudiamoncef.hashnode.dev", icon = "fas fa-dice-one" },
   { link = "https://stackoverflow.com/users/8126192/moncef-aoudia", icon = "fab fa-stack-overflow" },
   { link = "https://slides.com/aoudiamoncef", icon = "fas fa-sliders-h" },
   { link = "https://speakerdeck.com/aoudiamoncef", icon = "fab fa-speaker-deck" },

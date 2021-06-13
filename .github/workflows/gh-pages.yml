@@ -33,6 +33,14 @@ jobs:
           alias asciidoctor="asciidoctor --attribute=experimental=true --attribute=icons=font"
           hugo --minify
 
+      - name: Upload Algolia Index
+        uses: wangchucheng/algolia-uploader@master
+        with:
+          app_id: ${{ secrets.ALGOLIA_APP_ID }}
+          admin_key: ${{ secrets.ALGOLIA_ADMIN_API_KEY }}
+          index_name: ${{ secrets.ALGOLIA_INDEX_NAME }}
+          index_file_path: public/index.json
+
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         if: github.ref == 'refs/heads/main'
