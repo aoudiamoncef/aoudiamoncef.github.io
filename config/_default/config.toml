@@ -7,11 +7,15 @@ copyright = "© 2021 Moncef AOUDIA"
 # Generate the robots.txt file for SEO
 enableRobotsTXT = true
 
+enableGitInfo = true
+
+enableEmoji = true
+
 googleAnalytics = ""
 
 [outputs]
-  home = [ "HTML", "JSON", "RSS" ]
-  page = [ "HTML"]
+  home = [ "HTML", "JSON", "AMP", "RSS" ]
+  page = [ "HTML", "AMP"]
 
 [markup]
   [markup.tableOfContents]
@@ -30,12 +34,10 @@ googleAnalytics = ""
     verbose = false
     workingFolderCurrent = false
 
-enableGitInfo = true
-
 [frontmatter]
   date = ["date", "publishDate", "lastmod"]
+  publishDate = ["publishDate", "date", "lastmod"]
   expiryDate = ["expiryDate"]
   lastmod = [":git", "lastmod", "date", "publishDate"]
-  publishDate = ["lastmod", "publishDate", "date"]
 
 defaultContentLanguage = "en"

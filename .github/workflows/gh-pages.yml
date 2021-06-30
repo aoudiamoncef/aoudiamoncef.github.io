@@ -1,10 +1,11 @@
-name: github pages
+name: Build and deploy to Github pages
 
 on:
   push:
     branches:
-      - main  # Set a branch to deploy
-  pull_request:
+      - main
+  schedule:
+    - cron: '0 1 * * *'
 
 jobs:
   deploy:
@@ -18,7 +19,7 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: '0.83.1'
+          hugo-version: 'latest'
           extended: true
 
       - name: Setup Ruby
@@ -31,15 +32,15 @@ jobs:
       - name: Run Hugo
         run: |
           alias asciidoctor="asciidoctor --attribute=experimental=true --attribute=icons=font"
-          hugo --minify
+          hugo --minify --verbose
 
-      - name: Upload Algolia Index
-        uses: wangchucheng/algolia-uploader@master
+      - name: Upload Hugo Algolia Index
+        uses: aoudiamoncef/hugo-algolia-uploader@main
         with:
           app_id: ${{ secrets.ALGOLIA_APP_ID }}
           admin_key: ${{ secrets.ALGOLIA_ADMIN_API_KEY }}
           index_name: ${{ secrets.ALGOLIA_INDEX_NAME }}
-          index_file_path: public/index.json
+          index_languages: fr
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3

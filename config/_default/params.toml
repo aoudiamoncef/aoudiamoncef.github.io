@@ -3,11 +3,10 @@
 # Files are imported in the order they appear here, after
 # theme.css and theme.js, respectively.
 css_modules = ["css/aoudiamoncef.css", "css/asciidoctor.css", "css/monokai-sublime.min.css"]
-js_modules = []
 # Description and meta data for the search engines
 author = "Moncef AOUDIA"
 description = "Moncef AOUDIA website"
-keywords = "blog,personal,graphql,java,springboot,opensource,multilingual"
+keywords = "blog,personal,programming,java,graphql,springboot,quarkus,reactor,opensource,multilingual"
 # How many articles should be displayed at once?
 paginate = 10
 # Enable / Disable MathJax
@@ -53,6 +52,10 @@ enableMomentJs = true
 dateFormat = "2021-01-01"
 # display the estimated reading time for an article
 showReadingTime = true
+
+showPublishDate = true
+
+showLastModificationDate = true
 # Minimum word count to display the Table of Contents
 tocMinWordCount = 400
 # Footer configuration
