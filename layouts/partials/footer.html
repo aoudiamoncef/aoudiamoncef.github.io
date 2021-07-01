@@ -36,7 +36,7 @@
                 <strong>{{ i18n "socialMedia" }}</strong>
 
                 {{ range .Site.Params.socialMediaLinks }}
-                <a href="{{ .link }}" target="_blank"><i class="{{ .icon }}"></i></a>
+                <a href="{{ .link }}" title="{{ .title }}" target="_blank" rel="noopener"><i class="{{ .icon }}"></i></a>
                 {{ end }}
             </div>
             {{ end }}
@@ -62,7 +62,7 @@
 <div class="credits">
     <div class="container">
         <div class="copyright">
-            <a href="{{ .Site.Params.copyrightUrl | default "https://github.com/aoudiamoncef" }}" target="_blank">
+            <a href="{{ .Site.Params.copyrightUrl | default "https://github.com/aoudiamoncef" }}" target="_blank" rel="noopener">
                 &copy;
                 {{ if .Site.Params.copyrightUseCurrentYear }}
                 {{ now.Year }}
@@ -78,7 +78,7 @@
         </div>
         <div class="author">
             <a href="{{ .Site.Params.creditsUrl | default "https://github.com/aoudiamoncef/bilberry-hugo-theme" }}"
-                target="_blank">{{ .Site.Params.creditsText | default "Bilberry Hugo Theme" }}</a>
+                target="_blank" rel="noopener">{{ .Site.Params.creditsText | default "Bilberry Hugo Theme" }}</a>
         </div>
     </div>
 </div>
@@ -89,7 +89,10 @@
             .register('/sw.js', { scope: '/' })
             .then(() => {
                 {{/*  console.info('Moncef AOUDIA Service Worker Registered');  */}}
-            }, err => console.error("Moncef AOUDIA Service Worker registration failed: ", err));
+            }, err => {
+                {{/*  console.error("Moncef AOUDIA Service Worker registration failed: ", err);  */}}
+                throw err;
+            });
     
         navigator.serviceWorker
             .ready

@@ -79,17 +79,17 @@ showSocialMedia = true
 # all icons https://fontawesome.com/icons?d=gallery&m=free
 # brand icons https://fontawesome.com/icons?d=gallery&s=brands&m=free
 socialMediaLinks = [
-  { link = "https://twitter.com/aoudiamoncef", icon = "fab fa-twitter" },
-  { link = "https://github.com/aoudiamoncef", icon = "fab fa-github" },
-  { link = "https://www.linkedin.com/in/%F0%9F%91%A8%E2%80%8D%F0%9F%92%BB-moncef-aoudia-7723b311b", icon = "fab fa-linkedin" },
-  { link = "mailto:mf.aoudia@gmail.com", icon = "fas fa-envelope" },
-  { link = "https://dev.to/aoudiamoncef", icon = "fab fa-dev" },
-  { link = "https://medium.com/@aoudiamoncef", icon = "fab fa-medium-m" },
-  { link = "https://aoudiamoncef.hashnode.dev", icon = "fas fa-dice-one" },
-  { link = "https://stackoverflow.com/users/8126192/moncef-aoudia", icon = "fab fa-stack-overflow" },
-  { link = "https://slides.com/aoudiamoncef", icon = "fas fa-sliders-h" },
-  { link = "https://speakerdeck.com/aoudiamoncef", icon = "fab fa-speaker-deck" },
-  { link = "https://aoudiamoncef.github.io/index.xml", icon = "fas fa-rss" },
+  { link = "https://twitter.com/aoudiamoncef", title = "Moncef AOUDIA Twitter", icon = "fab fa-twitter" },
+  { link = "https://github.com/aoudiamoncef", title = "Moncef AOUDIA Github", icon = "fab fa-github" },
+  { link = "https://www.linkedin.com/in/%F0%9F%91%A8%E2%80%8D%F0%9F%92%BB-moncef-aoudia-7723b311b", title = "Moncef AOUDIA Linkedin", icon = "fab fa-linkedin" },
+  { link = "mailto:mf.aoudia@gmail.com", title = "Moncef AOUDIA Gmail", icon = "fas fa-envelope" },
+  { link = "https://dev.to/aoudiamoncef", title = "Moncef AOUDIA DEV.TO", icon = "fab fa-dev" },
+  { link = "https://medium.com/@aoudiamoncef", title = "Moncef AOUDIA Medium", icon = "fab fa-medium-m" },
+  { link = "https://aoudiamoncef.hashnode.dev", title = "Moncef AOUDIA Hashnode", icon = "fas fa-dice-one" },
+  { link = "https://stackoverflow.com/users/8126192/moncef-aoudia", title = "Moncef AOUDIA Stackoverflow", icon = "fab fa-stack-overflow" },
+  { link = "https://slides.com/aoudiamoncef", title = "Moncef AOUDIA Slides", icon = "fas fa-sliders-h" },
+  { link = "https://speakerdeck.com/aoudiamoncef", title = "Moncef AOUDIA SpeakerDeck", icon = "fab fa-speaker-deck" },
+  { link = "https://aoudiamoncef.github.io/index.xml", title = "Moncef AOUDIA RSS", icon = "fas fa-rss" },
 ]
 # credits line configuration
 copyrightBy = "Moncef AOUDIA"
