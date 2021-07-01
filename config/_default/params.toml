@@ -40,6 +40,10 @@ permanentTopNav = false
 stickyNav = false
 # show a language chooser in the header
 showHeaderLanguageChooser = true
+
+enableOpenGraph = true
+
+enableTwitterCards = true
 # Content configuration
 # Enable an optional pinned page to display at the top of the index
 # pinnedPost = "/article/installing-bilberry-theme/"
