@@ -11,7 +11,17 @@ enableGitInfo = true
 
 enableEmoji = true
 
+canonifyURLs = true
+
 googleAnalytics = ""
+
+[sitemap]
+    changefreq = "weekly"
+    priority = 0.5
+
+[permalinks]
+    posts = "/:year/:month/:slug/"
+    page = "/:slug/"
 
 [outputs]
   home = [ "HTML", "JSON", "AMP", "RSS" ]
