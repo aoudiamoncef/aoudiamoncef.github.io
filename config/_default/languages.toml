@@ -15,5 +15,5 @@
   [fr.Taxonomies]
     author   = "auteur"
     tag      = "tags"
-    category = "catégories"
-    series   = "séries"
+    category = "categories"
+    series   = "series"

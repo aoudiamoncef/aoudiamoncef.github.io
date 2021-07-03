@@ -2,7 +2,9 @@
 # Files are relative to the static/ directory or a URL.
 # Files are imported in the order they appear here, after
 # theme.css and theme.js, respectively.
-css_modules = ["css/aoudiamoncef.css", "css/asciidoctor.css", "css/monokai-sublime.min.css"]
+css_modules = []
+
+concatCssAssets = true
 # Description and meta data for the search engines
 author = "Moncef AOUDIA"
 description = "Moncef AOUDIA website"
@@ -43,7 +45,7 @@ showHeaderLanguageChooser = true
 
 enableOpenGraph = true
 
-enableTwitterCards = true
+enableTwitterCard = true
 # Content configuration
 # Enable an optional pinned page to display at the top of the index
 # pinnedPost = "/article/installing-bilberry-theme/"
@@ -71,6 +73,9 @@ amountLatestPostsInFooter = 10
 # How many categories should be displayed in the footer section?
 # Set to -1 to hide the 'Categories' column
 amountCategoriesInFooter = 10
+# How many series should be displayed in the footer section?
+# Set to -1 to hide the 'Series' column
+amountSeriesInFooter = 10
 # show a language chooser in the footer
 showFooterLanguageChooser = true
 # social media profile urls for the footer links
@@ -106,3 +111,5 @@ utterancesIssueTerm   = "pathname"
 utterancesLabel   = "Comment"
 utterancesTheme = "github-light"
 utterancesCrossOrigin = "anonymous"
+
+backToTop = false

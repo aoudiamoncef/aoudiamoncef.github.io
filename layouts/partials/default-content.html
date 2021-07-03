@@ -10,25 +10,23 @@
             {{ if ( .ctx.Site.Params.enableMomentJs | default true ) }}
                 <span>{{ i18n "published" }} </span>
                 <span class="date moment">{{ .ctx.PublishDate.Format "2006-01-02" }}</span>
-                <span> | </span>
             {{ else }}
                 <span class="date">{{ .ctx.PublishDate.Format (.ctx.Site.Params.DateFormat | default "2006-01-02") }}</span>
-                <span> | </span>
             {{ end }}
         {{ end }}
 
         {{ if ( .ctx.Params.showLastModificationDate | default true ) }}
+            <span> | </span>
             {{ if ( .ctx.Site.Params.enableMomentJs | default true ) }}
                 <span>{{ i18n "updated" }} </span>
                 <span class="date moment">{{ .ctx.Lastmod.Format "2006-01-02" }}</span>
-                <span> | </span>
             {{ else }}
                 <span class="date">{{ .ctx.Lastmod.Format (.ctx.Site.Params.DateFormat | default "2006-01-02") }}</span>
-                <span> | </span>
             {{ end }}
         {{ end }}
 
         {{ if ( .ctx.Site.Params.showReadingTime | default false ) }}
+            <span> | </span>
             {{ if .ctx.Params.readingTime }}
                 <span class="readingTime">{{ i18n "readingTime" .ctx.Params.readingTime }}</span>
             {{ else }}
@@ -37,6 +35,7 @@
         {{ end }}
 
         {{ with .ctx.Params.categories }}
+            <span> | </span>
             <span class="categories">
                 {{ range . }}
                     {{ $urlValue := replace . " " "-" | lower}}
@@ -48,6 +47,7 @@
         {{ end }}
 
         {{ with .ctx.Params.author }}
+            <span> | </span>
             <span class="author">
                 {{ $urlValue := replace . " " "-" | lower}}
                 {{ with $.ctx.Site.GetPage (printf "/author/%s" $urlValue ) }}

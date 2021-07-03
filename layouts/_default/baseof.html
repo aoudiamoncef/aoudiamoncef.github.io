@@ -70,10 +70,7 @@
     <meta itemprop="description" content="{{ .Scratch.Get "description" }}">
 
     {{ if .Site.Params.enableOpenGraph | default true }}
-        {{ template "_internal/opengraph.html" . }}
-    {{ end }}
-    {{ if .Site.Params.enableTwitterCards | default true }}
-        {{ template "_internal/twitter_cards.html" . }}
+        {{ partial "opengraph.html" . }}
     {{ end }}
 
     {{ partial "favicon.html" . }}
@@ -93,12 +90,19 @@
 
     <link rel="stylesheet" rel="preload" href="{{ "theme.css" | absURL }}">
 
-    {{ partial "twitter-card.html" . }}
+    {{ if .Site.Params.enableTwitterCard | default true }}
+        {{ template "_internal/twitter_cards.html" }}
+    {{ end }}
+
+    {{ if .Site.Params.concatCssAssets | default true }}
+        {{ $CSS := resources.Match "css/**.css" | resources.Concat "css/main.css" | resources.Minify }}
+        <link rel="stylesheet"  href="{{ $CSS.Permalink  | absURL }}">
+    {{ end }} 
 
     {{ if isset .Site.Params "css_modules" }}
         {{ range .Site.Params.css_modules }}
             <link rel="stylesheet" href="{{ . | absURL }}">
-        {{ end }}
+    {{ end }} 
     {{ end }}
 </head>
 
@@ -132,6 +136,17 @@
     {{ if and (isset .Site.Params "algolia_search") (eq .Site.Params.algolia_search true) }}
     {{ partial "algolia-search.html" . }}
     {{ end }}
+
+    {{ if .Site.Params.backToTop | default true }}
+        <script src="https://unpkg.com/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js"></script>
+        <script>addBackToTop({
+            diameter: 32,
+            backgroundColor: 'rgb(45, 54, 66)',
+            textColor: '#fff'
+        })
+        </script>
+    {{ end }}
+
 </body>
 
 </html>

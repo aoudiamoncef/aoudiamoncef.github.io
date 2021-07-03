@@ -30,6 +30,20 @@
         </div>
         {{ end }}
 
+        {{ if and .Site.Taxonomies.series (gt ( .Site.Params.amountSeriesInFooter | default 7 ) 0 ) }}
+        <div class="series">
+            <a href="{{ "/series/" | relLangURL }}"><strong>{{ i18n "series" }}</strong></a>
+            <ul>
+                {{ range $order, $taxonomy := (first ( .Site.Params.amountSeriesInFooter | default 7 ) .Site.Taxonomies.series.ByCount) }}
+                <li>
+                    <a href="{{ (print "/series/" ($taxonomy.Name | urlize)) | relLangURL }}">{{ $taxonomy.Name | humanize }}
+                        ({{ $taxonomy.Count }})</a>
+                </li>
+                {{ end }}
+            </ul>
+        </div>
+        {{ end }}
+
         <div class="right">
             {{ if .Site.Params.showSocialMedia | default true }}
             <div class="external-profiles">
@@ -86,7 +100,7 @@
 <script>
     if ('serviceWorker' in navigator) {
         navigator.serviceWorker
-            .register('/sw.js', { scope: '/' })
+            .register('/sw.js', { scope: '.' })
             .then(() => {
                 {{/*  console.info('Moncef AOUDIA Service Worker Registered');  */}}
             }, err => {

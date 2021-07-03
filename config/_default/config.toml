@@ -16,8 +16,10 @@ googleAnalytics = ""
 canonifyURLs = false
 
 [permalinks]
-    article = "/:sections/:slug/"
-    page = "/:sections/"
+    article = ":section/:slug/"
+    blog = ":section/:slug/"
+    page = "/:slug/"
+    status = ":section/:slug/" 
 
 [sitemap]
     changefreq = "weekly"

@@ -1,9 +1,7 @@
 const CACHE_VERSION = 1;
 
 const BASE_CACHE_FILES = [
-    '/css/asciidoctor.css',
-    '/css/aoudiamoncef.css',
-    '/css/monokai-sublime.min.css',
+    '/css/main.min.css',
     '/theme.css',
     '/theme.js',
     '/manifest.json',

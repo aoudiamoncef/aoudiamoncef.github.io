@@ -35,6 +35,9 @@ other = "Autres langues"
 one = "1 Min. lecture"
 other = "{{.Count}} Min. lecture"
 
+[series]
+other = "Séries"
+
 [published]
 other = "Publié le"
 
