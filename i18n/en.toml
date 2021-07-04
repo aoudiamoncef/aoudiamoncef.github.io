@@ -7,8 +7,8 @@ other = "Authors"
 [tags]
 other = "Tags"
 
-[socialMedia]
-other = "Social media"
+[findMeOn]
+other = "Find me on"
 
 [latestPosts]
 other = "Latest posts"
@@ -46,3 +46,21 @@ other = "Published on"
 
 [updated]
 other = "Updated on"
+
+[homePage]
+other = "homepage"
+
+[pageNotFound]
+other = "Page Not Found"
+
+[issue]
+other = "issue"
+
+[errorMessagePart1]
+other = "Please return to the"
+
+[errorMessagePart2]
+other = "Consider opening a"
+
+[errorMessagePart3]
+other = "to fix the problem"

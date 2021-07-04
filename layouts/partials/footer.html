@@ -45,9 +45,9 @@
         {{ end }}
 
         <div class="right">
-            {{ if .Site.Params.showSocialMedia | default true }}
+            {{ if .Site.Params.showFindMeOn | default true }}
             <div class="external-profiles">
-                <strong>{{ i18n "socialMedia" }}</strong>
+                <strong>{{ i18n "findMeOn" }}</strong>
 
                 {{ range .Site.Params.socialMediaLinks }}
                 <a href="{{ .link }}" title="{{ .title }}" target="_blank" rel="noopener noreferrer"><i class="{{ .icon }}"></i></a>

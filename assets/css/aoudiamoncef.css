@@ -148,3 +148,7 @@ td, th {
 .bilberry-hugo-theme .credits .container a {
     color: #2b5c00;
 }
+
+.bilberry-hugo-theme footer .container a:hover {
+    color: #444;
+}

@@ -7,8 +7,8 @@ other = "Auteurs"
 [tags]
 other = "Mots clés"
 
-[socialMedia]
-other = "Des médias sociaux"
+[findMeOn]
+other = "Trouver moi sur"
 
 [latestPosts]
 other = "Derniers articles"
@@ -43,3 +43,21 @@ other = "Publié le"
 
 [updated]
 other = "Mise à jour le"
+
+[homePage]
+other = "acceuil"
+
+[pageNotFound]
+other = "Page introuvable"
+
+[issue]
+other = "ticket"
+
+[errorMessagePart1]
+other = "Veuillez retourner à l'"
+
+[errorMessagePart2]
+other = "Pensez à ouvrir un"
+
+[errorMessagePart3]
+other = "pour résoudre le problème"
