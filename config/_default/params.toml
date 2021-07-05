@@ -8,7 +8,7 @@ concatCssAssets = true
 # Description and meta data for the search engines
 author = "Moncef AOUDIA"
 description = "Moncef AOUDIA website"
-keywords = "blog,personal,programming,java,graphql,springboot,quarkus,reactor,opensource,multilingual"
+keywords = "blog,personal,programming,java,graphql,springboot,quarkus,reactor,camel,apollo,opensource,multilingual"
 # How many articles should be displayed at once?
 paginate = 10
 # Enable / Disable MathJax

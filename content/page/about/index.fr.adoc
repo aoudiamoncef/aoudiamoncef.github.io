@@ -1,9 +1,13 @@
----
-title: "À propos"
-date: 2021-05-19T07:30:00+01:00
-excludeFromTopNav: false
-showPublishDate: false
----
++++
+title = "À propos"
+date = 2021-05-19T07:30:00+01:00
+excludeFromTopNav = false
+showPublishDate = false
+showLastModificationDate = false
+showReadingTime = false
+slug = "about"
++++
+
 :source-highlighter: highlightjs
 
 Je suis développeur de logiciels && un passionné / mainteneur open-source.
