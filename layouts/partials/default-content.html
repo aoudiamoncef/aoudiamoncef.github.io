@@ -58,7 +58,7 @@
         {{ end }}
 
         {{ with .ctx.Params.author }}
-            <span> | </span>
+            <span> | {{ i18n "by" }}</span>
             <span class="author">
                 {{ $urlValue := replace . " " "-" | lower}}
                 {{ with $.ctx.Site.GetPage (printf "/author/%s" $urlValue ) }}

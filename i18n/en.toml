@@ -47,6 +47,9 @@ other = "Published on"
 [updated]
 other = "Updated on"
 
+[by]
+other = "By"
+
 [homePage]
 other = "homepage"
 

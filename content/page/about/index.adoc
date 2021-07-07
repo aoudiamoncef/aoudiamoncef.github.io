@@ -5,6 +5,7 @@ excludeFromTopNav = false
 showPublishDate = false
 showLastModificationDate = false
 showReadingTime = false
+author = "Moncef AOUDIA"
 slug = "about"
 +++
 

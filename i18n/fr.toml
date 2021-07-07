@@ -44,6 +44,9 @@ other = "Publié le"
 [updated]
 other = "Mise à jour le"
 
+[by]
+other = "Par"
+
 [homePage]
 other = "acceuil"
 
