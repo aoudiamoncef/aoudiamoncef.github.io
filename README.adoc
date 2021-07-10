@@ -10,15 +10,14 @@ built using https://gohugo.io/[Hugo], https://github.com/Lednerb/bilberry-hugo-t
 
 == Editing
 
-Launch a local Hugo server including live reload by running (append `-F`
-for including future posts):
+Launch a local Hugo server including live reload by running:
 
 [source,shell]
 ----
-hugo server -D
+hugo server --debug --buildDrafts --buildExpired --buildFuture --path-warnings --i18n-warnings --templateMetrics --templateMetricsHints --verbose --verboseLog
 ----
 
 == Deployment
 
-Deployment to GitHub pages happens automatically upon pushing the main
-branch to the upstream repository by means of a GitHub Action.
+Deployment to CloudFlare/Deployment to GitHub pages happens automatically upon pushing the main
+branch.
