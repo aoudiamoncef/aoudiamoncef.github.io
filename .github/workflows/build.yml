@@ -34,7 +34,7 @@ jobs:
         with:
           bundler-cache: true
 
-      - run: which asciidoctor && gem install asciidoctor asciidoctor-html5s && which asciidoctor
+      - run: whereis asciidoctor && gem install asciidoctor asciidoctor-html5s && whereis asciidoctor 
 
       - name: Run Hugo
         run: hugo --minify --buildDrafts --buildExpired --buildFuture --path-warnings --i18n-warnings --templateMetrics --templateMetricsHints --verbose --verboseLog
