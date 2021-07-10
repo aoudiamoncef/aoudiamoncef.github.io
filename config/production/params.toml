@@ -1,7 +1,0 @@
-# Enable / Disable algolia search
-algolia_search    = true
-algolia_appId     = "LISTPBXYVO"
-algolia_apiKey    = "bbc1ce51dc8fb4a88eb8bfb3b6949b0e"
-algolia_indexName = "aoudiamoncef.github.io"
-# Set this option to false if you want to search within all articles in all languages at once
-algolia_currentLanguageOnly = true

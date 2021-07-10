@@ -13,7 +13,7 @@
   subtitle = "Développeur, passionné et mainteneur de projets open-source."
   weight = 2
   [fr.Taxonomies]
-    author   = "auteur"
+    author   = "author"
     tag      = "tags"
     category = "categories"
     series   = "series"

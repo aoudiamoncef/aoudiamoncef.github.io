@@ -7,7 +7,7 @@ css_modules = []
 concatCssAssets = true
 # Description and meta data for the search engines
 author = "Moncef AOUDIA"
-description = "Moncef AOUDIA website"
+description = "Moncef AOUDIA's website"
 keywords = "blog,personal,programming,java,graphql,springboot,quarkus,reactor,camel,apollo,opensource,multilingual"
 # How many articles should be displayed at once?
 paginate = 10
@@ -15,9 +15,9 @@ paginate = 10
 enable_mathjax    = false
 # Enable / Disable algolia search
 algolia_search    = true
-algolia_appId     = "LISTPBXYVO"
-algolia_apiKey    = "bbc1ce51dc8fb4a88eb8bfb3b6949b0e"
-algolia_indexName = "aoudiamoncef.github.io"
+algolia_appId     = ""
+algolia_apiKey    = ""
+algolia_indexName = ""
 # Set this option to false if you want to search within all articles in all languages at once
 algolia_currentLanguageOnly = true
 # Media configuration
@@ -95,19 +95,19 @@ socialMediaLinks = [
   { link = "https://stackoverflow.com/users/8126192/moncef-aoudia", title = "Moncef AOUDIA Stackoverflow", icon = "fab fa-stack-overflow" },
   { link = "https://slides.com/aoudiamoncef", title = "Moncef AOUDIA Slides", icon = "fas fa-sliders-h" },
   { link = "https://speakerdeck.com/aoudiamoncef", title = "Moncef AOUDIA SpeakerDeck", icon = "fab fa-speaker-deck" },
-  { link = "https://aoudiamoncef.github.io/index.xml", title = "Moncef AOUDIA RSS", icon = "fas fa-rss" },
+  { link = "https://www.maoudia.com/index.xml", title = "Moncef AOUDIA RSS", icon = "fas fa-rss" },
 ]
 # credits line configuration
 copyrightBy = "Moncef AOUDIA"
 copyrightUseCurrentYear = true  # set to true to always display the current year in the copyright
 copyrightYearOverride = "2021"
 copyrightUrl = "https://creativecommons.org/licenses/by-sa/4.0"
-creditsText = "Source code for Moncef AOUDIA 's website"
-creditsUrl = "https://github.com/aoudiamoncef/aoudiamoncef.github.io"
+creditsText = "Source code for Moncef AOUDIA's website"
+creditsUrl = "https://github.com/aoudiamoncef/maoudia.com"
 # Enable / Disable Utterances comments
 utterances    = true
 utterancesJsUrl     = "https://utteranc.es/client.js"
-utterancesRepository    = "aoudiamoncef/aoudiamoncef.github.io"
+utterancesRepository    = "aoudiamoncef/maoudia.com"
 utterancesIssueTerm   = "pathname"
 utterancesLabel   = "Comment"
 utterancesTheme = "github-light"

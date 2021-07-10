@@ -5,8 +5,8 @@
 </h1>
 ++++
 
-This repo contains the source code of the https://aoudiamoncef.github.io[aoudiamoncef.github.io] website. It is
-built using https://gohugo.io/[Hugo], https://github.com/Lednerb/bilberry-hugo-theme[Billeberry] theme and hosted on https://pages.github.com/[GitHub Pages].
+This repo contains the source code of the https://www.maoudia.com[maoudia.com] website. It is
+built using https://gohugo.io/[Hugo], https://github.com/Lednerb/bilberry-hugo-theme[Billeberry] theme and hosted on https://maoudia.pages.dev/[CloudFlare Pages] and https://pages.github.com/[GitHub Pages].
 
 == Editing
 
