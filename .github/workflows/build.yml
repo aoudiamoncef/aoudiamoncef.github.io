@@ -34,13 +34,10 @@ jobs:
         with:
           bundler-cache: true
 
-      - run: gem install asciidoctor asciidoctor-html5s
+      - run: which asciidoctor && gem install asciidoctor asciidoctor-html5s && which asciidoctor
 
       - name: Run Hugo
         run: hugo --minify --buildDrafts --buildExpired --buildFuture --path-warnings --i18n-warnings --templateMetrics --templateMetricsHints --verbose --verboseLog
-
-      - name: Run Hugo
-        run: ls -a && cd public && ls -a && cat index.json
 
       - name: Upload Hugo Algolia Index
         uses: aoudiamoncef/hugo-algolia-uploader@main
