@@ -32,6 +32,7 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           bundler-cache: true
+        run: gem install asciidoctor asciidoctor-html5s
 
       - name: Run Hugo
         run: hugo --renderToMemory --minify --buildDrafts --buildExpired --buildFuture --path-warnings --i18n-warnings --templateMetrics --templateMetricsHints --verbose --verboseLog
