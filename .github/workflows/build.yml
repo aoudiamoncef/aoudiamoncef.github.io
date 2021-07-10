@@ -43,8 +43,9 @@ jobs:
         run: ls -a /public
 
       - name: Upload Hugo Algolia Index
-        uses: aoudiamoncef/hugo-algolia-uploader@main
+        uses: wangchucheng/algolia-uploader@master
         with:
           app_id: ${{ secrets.ALGOLIA_APP_ID }}
           admin_key: ${{ secrets.ALGOLIA_ADMIN_API_KEY }}
           index_name: ${{ secrets.ALGOLIA_INDEX_NAME }}
+          index_file_path: "public/index.json"
