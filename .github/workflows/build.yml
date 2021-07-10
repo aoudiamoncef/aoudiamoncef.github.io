@@ -9,7 +9,7 @@ on:
       - main
 
 jobs:
-  deploy:
+  build:
     environment: staging
     runs-on: ubuntu-18.04
     steps:
@@ -31,10 +31,7 @@ jobs:
 
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
-        with:
-          bundler-cache: true
-
-      - run: bundle config set system 'true' && bundle install && whereis asciidoctor
+      - run: gem install asciidoctor asciidoctor-html5s
 
       - name: Run Hugo
         run: hugo --minify --buildDrafts --buildExpired --buildFuture --path-warnings --i18n-warnings --templateMetrics --templateMetricsHints --verbose --verboseLog
