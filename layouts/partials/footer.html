@@ -30,13 +30,27 @@
         </div>
         {{ end }}
 
+        {{ if and .Site.Taxonomies.series (gt ( .Site.Params.amountSeriesInFooter | default 7 ) 0 ) }}
+        <div class="series">
+            <a href="{{ "/series/" | relLangURL }}"><strong>{{ i18n "series" }}</strong></a>
+            <ul>
+                {{ range $order, $taxonomy := (first ( .Site.Params.amountSeriesInFooter | default 7 ) .Site.Taxonomies.series.ByCount) }}
+                <li>
+                    <a href="{{ (print "/series/" ($taxonomy.Name | urlize)) | relLangURL }}">{{ $taxonomy.Name | humanize }}
+                        ({{ $taxonomy.Count }})</a>
+                </li>
+                {{ end }}
+            </ul>
+        </div>
+        {{ end }}
+
         <div class="right">
-            {{ if .Site.Params.showSocialMedia | default true }}
+            {{ if .Site.Params.showFindMeOn | default true }}
             <div class="external-profiles">
-                <strong>{{ i18n "socialMedia" }}</strong>
+                <strong>{{ i18n "findMeOn" }}</strong>
 
                 {{ range .Site.Params.socialMediaLinks }}
-                <a href="{{ .link }}" target="_blank"><i class="{{ .icon }}"></i></a>
+                <a href="{{ .link }}" title="{{ .title }}" target="_blank" rel="noopener noreferrer"><i class="{{ .icon }}"></i></a>
                 {{ end }}
             </div>
             {{ end }}
@@ -62,7 +76,7 @@
 <div class="credits">
     <div class="container">
         <div class="copyright">
-            <a href="{{ .Site.Params.copyrightUrl | default "https://github.com/aoudiamoncef" }}" target="_blank">
+            <a href="{{ .Site.Params.copyrightUrl | default "https://github.com/aoudiamoncef" }}" target="_blank" rel="noopener">
                 &copy;
                 {{ if .Site.Params.copyrightUseCurrentYear }}
                 {{ now.Year }}
@@ -78,7 +92,7 @@
         </div>
         <div class="author">
             <a href="{{ .Site.Params.creditsUrl | default "https://github.com/aoudiamoncef/bilberry-hugo-theme" }}"
-                target="_blank">{{ .Site.Params.creditsText | default "Bilberry Hugo Theme" }}</a>
+                target="_blank" rel="noopener">{{ .Site.Params.creditsText | default "Bilberry Hugo Theme" }}</a>
         </div>
     </div>
 </div>
@@ -86,10 +100,13 @@
 <script>
     if ('serviceWorker' in navigator) {
         navigator.serviceWorker
-            .register('/sw.js', { scope: '/' })
+            .register('/sw.js', { scope: '.' })
             .then(() => {
                 {{/*  console.info('Moncef AOUDIA Service Worker Registered');  */}}
-            }, err => console.error("Moncef AOUDIA Service Worker registration failed: ", err));
+            }, err => {
+                {{/*  console.error("Moncef AOUDIA Service Worker registration failed: ", err);  */}}
+                throw err;
+            });
     
         navigator.serviceWorker
             .ready
