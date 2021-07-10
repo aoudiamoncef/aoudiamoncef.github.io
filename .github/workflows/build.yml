@@ -34,7 +34,7 @@ jobs:
         with:
           bundler-cache: true
 
-      - run: bundle install --system
+      - run: bundle config set system 'true' && bundle install && whereis asciidoctor
 
       - name: Run Hugo
         run: hugo --minify --buildDrafts --buildExpired --buildFuture --path-warnings --i18n-warnings --templateMetrics --templateMetricsHints --verbose --verboseLog
